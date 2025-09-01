@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctor Strange Page</title>
+  <style>
+    body {
+      background: red;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      padding: 50px;
+    }
+
+    h1 { color: yellow; }
+    h2 { color: cyan; }
+
+    p {
+      font-size: 20px;
+      color: white;
+    }
+
+    /* after element */
+    p::after {
+      content: " 🌀 (Sorcerer Supreme)";
+      color: gold;
+    }
+
+    /* hover effect */
+    p:hover::after {
+      content: " ✨ Master of Mystic Arts!";
+      color: lime;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to FSD</h1>
+  <h2>Hi, I'm Doctor Strange</h2>
+
+  <p>I protect Earth from magical threats</p>
+</body>
+</html>

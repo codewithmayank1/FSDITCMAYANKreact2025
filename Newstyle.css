@@ -1,0 +1,31 @@
+body {
+  background: red;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  padding: 50px;
+}
+
+h1 {
+  color: yellow;
+}
+
+h2 {
+  color: cyan;
+}
+
+p {
+  font-size: 20px;
+  color: white;
+}
+
+/* ::after pseudo-element */
+p::after {
+  content: " 🌀 (Sorcerer Supreme)";
+  color: gold;
+}
+
+/* hover pe text change hoga */
+p:hover::after {
+  content: " ✨ Master of Mystic Arts!";
+  color: lime;
+}

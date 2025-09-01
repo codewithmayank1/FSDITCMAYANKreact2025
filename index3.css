@@ -1,0 +1,41 @@
+ body{
+    background-color: aqua;
+}
+h2{
+    background-color: navy;
+    color: rgb(223, 218, 228);
+}
+h2,p,h3{
+    background-color: brown;
+    color: black;
+
+}
+    #heading1{
+        background-color: pink;
+        font-weight: 200;
+    } */
+div~p{
+    background-color: aquamarine;
+    color:blue;
+}
+p:hover{
+    background-color:aliceblue;
+    font-size: small;
+    color:chartreuse;
+}
+p::after{
+    content:"React Development";
+    background-color: brown;
+    color:white;
+}
+p::before{
+    content:"   Hey,Anant";
+    background-color:brown;
+    color:white;
+}
+p::selection{
+    background-color: greenyellow;
+}
+p:nth-child(2){
+    background-color: black;
+}
