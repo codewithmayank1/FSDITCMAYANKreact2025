@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Invoice</title>
+  <style>
+    body { font-family: Arial, sans-serif; }
+    table { border-collapse: collapse; width: 80%; margin: 20px auto; }
+    th, td { border: 1px solid black; padding: 6px; }
+    th { background: #f2f2f2; }
+    .right { text-align: right; }
+    .center { text-align: center; }
+    .bold { font-weight: bold; }
+  </style>
+</head>
+<body>
+
+  <table>
+    <tr>
+      <td class="bold">Invoice #123456789</td>
+      <td class="right bold">14 January 2025</td>
+    </tr>
+    <tr>
+      <td>
+        <b>Pay to:</b><br>
+        Christine Co.<br>
+        123 Prayagraj.<br>
+        Uttar Pradesh, NA 12345
+      </td>
+      <td>
+        <b>Customer:</b><br>
+        Steven Strange<br>
+        321 Kamataaj<br>
+        Southeast America, MA 54321
+      </td>
+    </tr>
+  </table>
+
+  <table>
+    <tr>
+      <th>Name / Description</th>
+      <th>Qty.</th>
+      <th>@</th>
+      <th>Cost</th>
+    </tr>
+    <tr>
+      <td>Paperclips</td>
+      <td class="center">1000</td>
+      <td class="center">0.01</td>
+      <td class="right">10.00</td>
+    </tr>
+    <tr>
+      <td>Staples (box)</td>
+      <td class="center">100</td>
+      <td class="center">1.00</td>
+      <td class="right">100.00</td>
+    </tr>
+    <tr>
+      <td colspan="3" class="right bold">Subtotal</td>
+      <td class="right">110.00</td>
+    </tr>
+    <tr>
+      <td colspan="3" class="right bold">Tax 8%</td>
+      <td class="right">8.80</td>
+    </tr>
+    <tr>
+      <td colspan="3" class="right bold">Grand Total</td>
+      <td class="right bold">$118.80</td>
+    </tr>
+  </table>
+
+</body>
+</html>

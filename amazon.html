@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Simple Amazon-like Homepage</title>
+  <style>
+    /* ===== BASIC RESET ===== */
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Arial, Helvetica, sans-serif; background:#f2f2f2; }
+    a { text-decoration: none; color: inherit; }
+
+    /* ===== HEADER (LOGO + SEARCH + CART) ===== */
+    header { background:#131921; color:#fff; padding:10px 12px; }
+    .top { display:flex; align-items:center; gap:12px; }
+    .logo { font-weight:bold; font-size:1.2rem; padding:6px 8px; background:#232f3e; border-radius:4px; }
+
+    .search { flex:1; display:flex; border-radius:4px; overflow:hidden; }
+    .search select { border:none; background:#e6e6e6; padding:10px; }
+    .search input { flex:1; padding:10px; border:none; }
+    .search button { border:none; background:#febd69; padding:0 14px; cursor:pointer; }
+
+    .cart { background:#232f3e; padding:8px 10px; border-radius:4px; font-size:.95rem; }
+
+    /* ===== NAV LINKS ===== */
+    nav { background:#232f3e; color:#fff; padding:8px 12px; display:flex; gap:14px; font-size:.95rem; overflow:auto; }
+    nav a { padding:6px 8px; border-radius:4px; color:#fff; }
+    nav a:hover { background:#37475a; }
+
+    /* ===== HERO BANNER ===== */
+    .hero { margin:12px auto; max-width:1100px; height:220px; background:linear-gradient(90deg,#cce1ff,#ffe0b3); display:flex; align-items:center; justify-content:center; color:#111; border-radius:8px; }
+    .hero h2 { margin:0; }
+
+    /* ===== PRODUCTS GRID ===== */
+    .grid { max-width:1100px; margin:12px auto; display:grid; gap:12px; grid-template-columns: repeat(4, 1fr); }
+    @media (max-width:900px){ .grid{ grid-template-columns: repeat(2, 1fr);} }
+    @media (max-width:520px){ .grid{ grid-template-columns: 1fr; } }
+
+    .card { background:#fff; border-radius:8px; padding:12px; min-height:180px; display:flex; flex-direction:column; gap:8px; }
+    .img { background:#ddd; height:120px; border-radius:6px; display:flex; align-items:center; justify-content:center; color:#555; font-size:.9rem; }
+    .title { font-weight:bold; }
+    .price { color:#b12704; }
+    .btn { background:#ffd814; border:none; padding:8px 10px; border-radius:6px; cursor:pointer; align-self:start; }
+    .btn:hover { background:#f7ca00; }
+
+    /* ===== FOOTER ===== */
+    footer { background:#232f3e; color:#fff; padding:18px 12px; margin-top:20px; font-size:.9rem; text-align:center; }
+  </style>
+</head>
+<body>
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="top">
+      <div class="logo">MyShop</div>
+      <div class="search">
+        <select>
+          <option>All</option>
+          <option>Electronics</option>
+          <option>Books</option>
+          <option>Fashion</option>
+        </select>
+        <input type="text" placeholder="Search products" />
+        <button>Search</button>
+      </div>
+      <div class="cart">Cart (0)</div>
+    </div>
+  </header>
+
+  <!-- ===== NAV ===== -->
+  <nav>
+    <a href="#">Best Sellers</a>
+    <a href="#">Mobiles</a>
+    <a href="#">Fashion</a>
+    <a href="#">Electronics</a>
+    <a href="#">Home</a>
+    <a href="#">Beauty</a>
+    <a href="#">Appliances</a>
+    <a href="#">Books</a>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <h2>Welcome! to Amazon</h2>
+  </section>
+
+  <!-- ===== PRODUCTS GRID ===== -->
+  <main class="grid">
+    <article class="card">
+      <div class="img">Image</div>
+      <div class="title">Wireless Headphones</div>
+      <div class="price">₹1,999</div>
+      <button class="btn">Add to Cart</button>
+    </article>
+
+    <article class="card">
+      <div class="img">Image</div>
+      <div class="title">Smartphone Case</div>
+      <div class="price">₹299</div>
+      <button class="btn">Add to Cart</button>
+    </article>
+
+    <article class="card">
+      <div class="img">Image</div>
+      <div class="title">Fiction Book</div>
+      <div class="price">₹399</div>
+      <button class="btn">Add to Cart</button>
+    </article>
+
+    <article class="card">
+      <div class="img">Image</div>
+      <div class="title">Running Shoes</div>
+      <div class="price">₹2,499</div>
+      <button class="btn">Add to Cart</button>
+    </article>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    © 2025 MyShop • This is a simple practice layout.
+  </footer>
+</body>
+</html>
