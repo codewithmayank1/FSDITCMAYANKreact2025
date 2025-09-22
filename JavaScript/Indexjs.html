@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>I'M DOCTOR STRANGE</h1>
+
+  <div id="container"></div>
+
+  <button id="btn">Click Me</button>
+
+  <script>
+
+    const container = document.getElementById("container");
+
+    const h2 = document.createElement("h2");
+    h2.innerText = "ABES Engineering College";
+    h2.style.color = "white";
+    h2.style.backgroundColor = "blue";
+    h2.style.padding = "10px";
+    h2.style.textAlign = "center";
+    container.appendChild(h2);
+
+    const img = document.createElement("img");
+    img.src = "austin-poon-JO_S6ewBqAk-unsplash.jpg"; 
+    img.style.width = "300px";
+    img.style.height = "400px";
+    img.style.display = "block";
+    img.style.margin = "40px auto";
+    container.appendChild(img);
+    const but = document.getElementById("btn");
+    function msg(){
+      const div1 = document.createElement("div");
+      div1.innerText = "Mujhe College Nahi Jana Please";
+      div1.style.color = "black";
+      div1.style.backgroundColor = "lightblue";
+      div1.style.padding = "5px";
+      div1.style.textAlign = "center";
+      container.appendChild(div1);
+    }
+
+    but.addEventListener("click", msg);
+  </script>
+</body>
+</html>

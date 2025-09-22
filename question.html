@@ -1,18 +1,24 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-  <title>Complex Frameset</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
+<body>
+  <label> Enter Name:</label>
+  <input type="text" placeholder="Enter Name" id="name">
+  <button onclick="greetUser()">Get data</button>
 
-<frameset cols="30%,30%,*">
-  <frame src="a.html"></frame>
-  <frameset cols="30%,70%">
-    <frame src="b.html"></frame>
-    <frame src="c.html"></frame>
-  </frameset>
-
-  <frameset cols="60%,40%">
-    <frame src="d.html"></frame>
-    <frame src="e.html"></frame>
-  </frameset>
-
-</frameset>
+  <p id="output"></p> 
+  <script>
+    function greetUser() {
+      let name = document.getElementById("name").value;
+      if (name.trim() === "") { 
+        name = "Dr Strange";
+      }
+      document.getElementById("output").innerText = "Hi " + name;
+    }
+  </script>
+</body>
+</html>

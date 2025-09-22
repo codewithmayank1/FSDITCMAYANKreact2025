@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Data Capture</title>
+    <link rel="stylesheet" href="faltu.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Student Information</h1>
+        <form id="studentForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="e.g., Mayank Maurya" required>
+            </div>
+            <div class="form-group">
+                <label for="branch">Branch:</label>
+                <input type="text" id="branch" placeholder="e.g., Information Technology" required>
+            </div>
+            <div class="form-group">
+                <label for="section">Section:</label>
+                <input type="text" id="section" placeholder="e.g., C" required>
+ </div>
+ <div class="form-group">
+                <label for="college">College:</label>
+                <input type="text" id="college" placeholder="e.g., ABES Engineering College" required>
+ </div>
+ <div class="form-group">
+                <label for="location">College Location:</label>
+                <input type="text" id="location" placeholder="e.g., Ghaziabad" required>
+        </div>
+            <button type="submit">Show Captured Data</button>
+        </form>
+
+        <div id="outputContainer" class="output-container"></div>
+    </div>
+
+    <script src="faltu.js"></script>
+</body>
+</html>
